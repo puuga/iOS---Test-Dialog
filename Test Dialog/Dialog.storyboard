@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dialog Ads Type2 View Controller-->
+        <scene sceneID="hGv-AV-9Du">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ny-g9-ueO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="DialogAdsType2ViewController" id="ltp-cm-LDG" customClass="DialogAdsType2ViewController" customModule="Test_Dialog" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rsf-6Q-3pZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="3WA-BG-DTg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="360-RV-Tc0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZX-Le-db6">
+                                <rect key="frame" x="0.0" y="629" width="375" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="V74-xj-EBL"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="onClickBtnAction:" destination="ltp-cm-LDG" eventType="touchUpInside" id="ggg-vx-03t"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zBs-hc-fJ7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="629"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HZX-Le-db6" firstAttribute="top" secondItem="zBs-hc-fJ7" secondAttribute="bottom" id="GS3-LF-RCc"/>
+                            <constraint firstAttribute="trailing" secondItem="zBs-hc-fJ7" secondAttribute="trailing" id="L6C-7o-6NM"/>
+                            <constraint firstItem="zBs-hc-fJ7" firstAttribute="leading" secondItem="360-RV-Tc0" secondAttribute="leading" id="Typ-Ax-Jwj"/>
+                            <constraint firstItem="zBs-hc-fJ7" firstAttribute="leading" secondItem="HZX-Le-db6" secondAttribute="leading" id="WH9-iH-KND"/>
+                            <constraint firstItem="HZX-Le-db6" firstAttribute="bottom" secondItem="3WA-BG-DTg" secondAttribute="top" id="xHi-i3-vls"/>
+                            <constraint firstItem="zBs-hc-fJ7" firstAttribute="trailing" secondItem="HZX-Le-db6" secondAttribute="trailing" id="yY8-SQ-JWu"/>
+                            <constraint firstItem="zBs-hc-fJ7" firstAttribute="top" secondItem="360-RV-Tc0" secondAttribute="top" id="zKk-qc-jFj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ivImage" destination="zBs-hc-fJ7" id="e98-ih-A0M"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="165.59999999999999" y="-287.40629685157421"/>
+        </scene>
+    </scenes>
+</document>

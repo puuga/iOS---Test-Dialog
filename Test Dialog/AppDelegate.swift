@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MZFormSheetPresentationController
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Blur will be applied to all MZFormSheetPresentationControllers by default
+//        MZFormSheetPresentationController.appearance().shouldApplyBackgroundBlurEffect = true
+        
+        MZFormSheetPresentationController.appearance().shouldCenterVertically = true
+        MZFormSheetPresentationController.appearance().shouldCenterHorizontally = true
+        
         return true
     }
 
